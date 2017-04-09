@@ -17,7 +17,7 @@ class RaidersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create raider" do
     assert_difference('Raider.count') do
-      post raiders_url, params: { raider: { battletag: @raider.battletag, class: @raider.class, name: @raider.name, rank: @raider.rank, role: @raider.role } }
+      post raiders_url, params: { raider: { battletag: @raider.battletag, name: @raider.name, rank: @raider.rank, role: @raider.role, wowclass: @raider.wowclass } }
     end
 
     assert_redirected_to raider_url(Raider.last)
@@ -34,7 +34,7 @@ class RaidersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update raider" do
-    patch raider_url(@raider), params: { raider: { battletag: @raider.battletag, class: @raider.class, name: @raider.name, rank: @raider.rank, role: @raider.role } }
+    patch raider_url(@raider), params: { raider: { battletag: @raider.battletag, name: @raider.name, rank: @raider.rank, role: @raider.role, wowclass: @raider.wowclass } }
     assert_redirected_to raider_url(@raider)
   end
 

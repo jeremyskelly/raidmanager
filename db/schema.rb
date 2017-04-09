@@ -10,17 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170409191827) do
+ActiveRecord::Schema.define(version: 20170409201017) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "raiders", force: :cascade do |t|
     t.string   "name"
-    t.string   "class"
+    t.string   "wowclass"
     t.string   "role"
     t.string   "battletag"
     t.string   "rank"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

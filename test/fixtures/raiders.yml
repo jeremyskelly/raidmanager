@@ -2,14 +2,14 @@
 
 one:
   name: MyString
-  class: MyString
+  wowclass: MyString
   role: MyString
   battletag: MyString
   rank: MyString
 
 two:
   name: MyString
-  class: MyString
+  wowclass: MyString
   role: MyString
   battletag: MyString
   rank: MyString

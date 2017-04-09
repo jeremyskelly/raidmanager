@@ -69,6 +69,6 @@ class RaidersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def raider_params
-      params.require(:raider).permit(:name, :class, :role, :battletag, :rank)
+      params.require(:raider).permit(:name, :wowclass, :role, :battletag, :rank)
     end
 end
