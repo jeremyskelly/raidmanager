@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @raider.name %>
+</p>
+
+<p>
+  <strong>Class:</strong>
+  <%= @raider.class %>
+</p>
+
+<p>
+  <strong>Role:</strong>
+  <%= @raider.role %>
+</p>
+
+<p>
+  <strong>Battletag:</strong>
+  <%= @raider.battletag %>
+</p>
+
+<p>
+  <strong>Rank:</strong>
+  <%= @raider.rank %>
+</p>
+
+<%= link_to 'Edit', edit_raider_path(@raider) %> |
+<%= link_to 'Back', raiders_path %>
